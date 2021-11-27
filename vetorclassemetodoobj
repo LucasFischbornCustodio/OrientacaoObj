@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+class vetorclass{ 
+int i, j;
+
+  public: 
+  repeticao(int vet[5]);
+  
+};
+
+         int vetorclass::repeticao(int vet[5]){
+         for (i=0;i<5;i++){
+	     cout<<"Digite o "<<i+1 << " numero" <<endl;
+	     cin>>vet[i];
+	     
+}
+
+for(i=0;i<5;i++){
+	for(j=0;j<5;j++){
+		if(vet[i] == vet[j]){
+			if(i!=j){
+			
+		cout << "O numero repetido e "<< vet[i]<<" na posicao " <<i+1<<" e "<<j+1<<endl;
+		break;
+				
+			}
+		}
+	}
+}
+}
+int main(){
+	int vet[5];
+	vetorclass vetorobj;
+	vetorobj.repeticao(vet);
+
+}
