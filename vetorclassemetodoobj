@@ -16,7 +16,7 @@ int i, j;
 }
 
 for(i=0;i<5;i++){
-	for(j=0;j<5;j++){
+	for(j=i;j<5;j++){
 		if(vet[i] == vet[j]){
 			if(i!=j){
 			
